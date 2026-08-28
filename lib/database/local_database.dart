@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:sqflite/sqflite.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
@@ -80,10 +82,22 @@ class LocalDatabase {
     sqfliteFfiInit();
 
     final databaseFactory = databaseFactoryFfi;
-    final databasePath = await databaseFactory.getDatabasesPath();
-    final path = '$databasePath/phonefix.db';
 
-    return await databaseFactory.openDatabase(
+    final localAppData = Platform.environment['LOCALAPPDATA'];
+
+    if (localAppData == null) {
+      throw Exception('LOCALAPPDATA environment variable not found.');
+    }
+
+    final phoneFixDirectory = Directory('$localAppData\\PhoneFix');
+
+    if (!await phoneFixDirectory.exists()) {
+      await phoneFixDirectory.create(recursive: true);
+    }
+
+    final path = '${phoneFixDirectory.path}\\phonefix.db';
+
+    return databaseFactory.openDatabase(
       path,
       options: OpenDatabaseOptions(
         version: 6,
