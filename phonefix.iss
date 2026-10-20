@@ -1,6 +1,6 @@
-#define MyAppName "PhoneRepairSystem"
+#define MyAppName "Fixora"
 #define MyAppVersion "1.0.0"
-#define MyAppPublisher "PhoneRepairsystem"
+#define MyAppPublisher "Fixora"
 #define MyAppExeName "repair_shop_system.exe"
 
 [Setup]
@@ -8,15 +8,15 @@ AppId={{PHONEFIX-APP-2026}}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppPublisher={#MyAppPublisher}
-DefaultDirName={autopf}\PhoneFix
-DefaultGroupName=PhoneFix
+DefaultDirName={autopf}\Fixora
+DefaultGroupName=Fixora
 OutputDir=Output
-OutputBaseFilename=PhoneFix-Setup
+OutputBaseFilename=Fixora-Setup
 Compression=lzma
 SolidCompression=yes
 ArchitecturesInstallIn64BitMode=x64
 PrivilegesRequired=admin
-UninstallDisplayName=PhoneFix
+UninstallDisplayName=Fixora
 SetupIconFile=windows\runner\resources\app_icon.ico
 WizardStyle=modern
 
@@ -25,8 +25,8 @@ Source: "C:\Users\tidul\OneDrive\Desktop\PhoneRepairSystem\repair_shop_system\bu
 Source: "windows\runner\resources\app_icon.ico"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
-Name: "{autoprograms}\PhoneFix"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\app_icon.ico"
-Name: "{autodesktop}\PhoneFix"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\app_icon.ico"
+Name: "{autoprograms}\Fixora"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\app_icon.ico"
+Name: "{autodesktop}\Fixora"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\app_icon.ico"
 
 [Run]
-Filename: "{app}\{#MyAppExeName}"; Description: "Launch PhoneFix"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\{#MyAppExeName}"; Description: "Launch Fixora"; Flags: nowait postinstall skipifsilent

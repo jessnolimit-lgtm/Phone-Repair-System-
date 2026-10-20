@@ -1,11 +1,11 @@
 {
-    "name": "repair_shop_system",
-    "short_name": "repair_shop_system",
+    "name": "Fixora",
+    "short_name": "Fixora",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Fixora phone repair shop management system.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

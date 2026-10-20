@@ -29,7 +29,7 @@ class PhoneRepairApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'PhoneFix',
+      title: 'Fixora',
       theme: ThemeData(
         useMaterial3: true,
         fontFamily: 'Arial',
@@ -189,7 +189,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       const SizedBox(height: 24),
                       const Text(
-                        'PHONEFIX',
+                        'FIXORA',
                         style: TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.w800,
@@ -460,7 +460,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               const SizedBox(height: 12),
 
               const Text(
-                'PHONEFIX',
+                'FIXORA',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w800,

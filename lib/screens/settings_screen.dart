@@ -41,7 +41,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     if (!mounted) return;
 
-    _shopNameController.text = settings['shop_name'] ?? 'PhoneFix';
+    _shopNameController.text = settings['shop_name'] ?? 'Fixora';
 
     _addressController.text = settings['shop_address'] ?? '';
 
@@ -150,13 +150,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text('About PhoneFix'),
+          title: const Text('About Fixora'),
           content: const Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'PhoneFix',
+                'Fixora',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 8),
@@ -293,7 +293,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 const SizedBox(height: 6),
 
                 const Text(
-                  'Configure your PhoneFix business system.',
+                  'Configure your Fixora business system.',
                   style: TextStyle(color: Color(0xFF64748B)),
                 ),
 
@@ -311,7 +311,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       _textField(
                         controller: _shopNameController,
                         label: 'Shop Name',
-                        hint: 'PhoneFix',
+                        hint: 'Fixora',
                       ),
 
                       const SizedBox(height: 16),
@@ -533,7 +533,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 // =================================================
                 _sectionTitle(
                   'Application',
-                  'General PhoneFix application preferences.',
+                  'General Fixora application preferences.',
                 ),
 
                 _card(
@@ -601,7 +601,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 // =================================================
                 _sectionTitle(
                   'Database & Backup',
-                  'Your PhoneFix data is stored locally on this computer.',
+                  'Your Fixora data is stored locally on this computer.',
                 ),
 
                 _card(
@@ -641,7 +641,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       const SizedBox(height: 16),
 
                       const Text(
-                        'PhoneFix uses a local SQLite database so the system can continue operating without an internet connection.',
+                        'Fixora uses a local SQLite database so the system can continue operating without an internet connection.',
                         style: TextStyle(color: Color(0xFF64748B)),
                       ),
 
@@ -689,7 +689,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
 
                     title: const Text(
-                      'PhoneFix',
+                      'Fixora',
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
 
